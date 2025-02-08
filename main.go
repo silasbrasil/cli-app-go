@@ -5,7 +5,8 @@ import (
 	"os"
 
 	tea "github.com/charmbracelet/bubbletea"
-	questions "github.com/silasbrasil/cli-app-go/questions"
+	"github.com/silasbrasil/cli-app-go/components"
+	"github.com/silasbrasil/cli-app-go/questions"
 )
 
 func main() {
@@ -23,4 +24,8 @@ func main() {
 	for k := range envModel.Selected {
 		fmt.Printf("%s \n", envModel.Choices[k])
 	}
+
+	tbl := components.GetTable("def_600287732")
+
+	fmt.Println(tbl)
 }

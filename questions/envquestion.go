@@ -68,7 +68,7 @@ func (m EnvModel) View() string {
 	}
 
 	// The footer
-	s += "\nPressione Enter para sair.\n"
+	s += "\nPressione Enter para confirmar.\n"
 
 	// Send the UI for rendering
 	return s
